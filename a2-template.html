@@ -1,0 +1,188 @@
+<html xml:lang="en" lang="en">
+  <head>
+    <title>Microsoft dataset visualization of Malware Prediction</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        margin: 0 auto 0 auto;
+        padding: 0;
+        background-color: #33333e;
+        width: 840px;
+        font-family: 'Avenir', 'Avenir Next', Helvetica Neue, Arial;
+        font-size: 0.95em;
+      }
+      a,
+      a:visited {
+        text-decoration: none;
+        color: #7533f4;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #f4b014;
+      }
+      img,
+      a.img,
+      a:hover.img {
+        border: none;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        color: #492a7c;
+        background-color: inherit;
+        font-weight: normal;
+        padding: 0 0 5px 0;
+        margin: 15px 0 0 0;
+        border: none;
+        clear: right;
+      }
+      h1 {
+        font-size: 18pt;
+        margin: 5px 0 10px 0;
+        line-height: 28px;
+      }
+      h2 {
+        font-size: 14pt;
+        margin: 30px 0 15px 0;
+        letter-spacing: 0.01em;
+        border-bottom: 1px solid #ccc;
+        line-height: 20px;
+      }
+      h3 {
+        font-size: 13pt;
+      }
+      h4 {
+        font-size: 12pt;
+      }
+      h5 {
+        font-size: 11pt;
+      }
+      p {
+        margin: 0 0 10px 0;
+      }
+      hr {
+        border: 0px;
+        border-top: 1px solid #ccc;
+        height: 0px;
+      }
+      ol {
+        margin: 1em;
+      }
+      .content {
+        margin: 0;
+        padding: 15px 20px;
+        background-color: #ffffff;
+      }
+      .article {
+        line-height: 1.5em;
+      }
+      .entry {
+        border-top: 1px solid #ddd;
+        padding-top: 2px;
+        margin-top: 3em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <section>
+        <h1>Exploratory Data Analysis Of Dataset</h1>
+        <p>
+          <h1><strong>Tejal Bijwe</strong></h1>
+        </p>
+      </section>
+
+      <section>
+        <h2>Dataset</h2>
+        <p>
+	   Jobs data present in VAST 2022 Challenge specify various characteristics regarding an individual employer. 		
+	   <br />The main focus in this dataset is the education Requirement, days to work, and hourly rate corresponding to a particular employer. Additionally, other details are job id, job start time, and job end time.
+	   <br />In this dataset not only the employer is distinguished by the days to work but also by the fact of their education requirement for a job.
+        </p>
+        <p>
+          The data used in the assignment is available online :
+          <strong>
+            <a href="https://vast-challenge.github.io/2022/index.html"
+              >https://vast-challenge.github.io/2022/index.html</a
+            >
+          </strong>
+        </p>
+      </section>
+
+      <section>
+        <h2>Initial Analysis Questions</h2>
+        <ol>
+          <li>Overall how many days does an employer work corresponding to their education requirement and which is the lowest with highest hourly pay?</li>
+          <li>
+            What is the average hourly rate for all education types?
+          </li>
+          <li>
+           According to days to work what is the time every employer starts and ends work?
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Discoveries and Insights</h2>
+
+        <div class="entry">
+          <img src="Sheet 1.png" />
+          <p class="caption">
+	Each education level, the count of days to work is visualized above. For bachlors the total number of days are 330, Graduate 174, High school or college employer for 705 days and lastly for low 119.
+          </p>
+        </div>
+	
+	<div class="entry">
+          <img src="Sheet 2.png" />
+          <p class="caption">
+	In the above figure, the number of days for all employer types is specified. Also, the lowest number of days to work is highlighted in this case 'Graduate' works the lowerest days overall. High school or college employer need to work maximum days.
+          </p>
+        </div>
+
+	<div class="entry">
+          <img src="Sheet 3.png" />
+          <p class="caption">
+	For each education type, what is the average hourly rate at work? 
+This is specified by calculating the average hourly rate and education requirement.
+The Above visualization of pie diagram is used for that. In the figure the average hourly rate for each employer education is shown (Bachlors-23.36, Graduate 33.88, High School or college-14.67 and Low-12.27).The total of all average hour rates is also visible in the background.
+          </p>
+        </div>	
+
+        <div class="entry">
+          <img src="Sheet 4.png" />
+          <p class="caption">
+           In the previous visualization, the average hourly rate is calculated for each required education. In this visualization, I used box and whisker plots to demonstrate that. Additionally, the flow for the hourly rate average is also visualized above with the minimum and maximum hourly rates of each employer.
+          </p>
+        </div>
+
+	<div class="entry">
+          <img src="Sheet 5.png" />
+          <p class="caption">
+            The timesheet for each employer is visualized in the above figure. Also, the visualization consists of each employer's end time to work above and start time to work below. Additionally, color differentiation is used to visualize days to work for each employer. The color palette for the count of days to work is visualized in the figure. For example, the maximum number of days an employee works is from 7.09 am to 3.09 pm.
+          </p>
+        </div>
+
+  	<div class="entry">
+   	 <h3>Summary</h3>
+    	  <p>
+   	 The Jobs data set in the VAST 2022 challenge is one of the best to work on as multiple attributes can be visualized and calculated.
+The one which I found challenging is to visualize each employer's count of days with the timesheet consisting of start time and end time to work.
+In the average and flow for hourly rate with required education visualization I learn a lot as in that not only overall average but also all employer hourly rate is visible with education level.
+    	  </p>
+  	</div>
+      </section>
+    </div>
+  </body>
+</html>
